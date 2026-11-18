@@ -16,7 +16,7 @@
     <group>authentication_failed,pci_dss_10.2.4,pci_dss_10.2.5,</group>
   </rule>
 
-<!-- REGLA PERSONALIZADA: Monitoreo /etc/shadow -->
+<!-- REGLA PERSONALIZADA:shadow -->
   <rule id="100002" level="12">
     <if_sid>5402</if_sid>
     <match>/etc/shadow</match>
@@ -26,7 +26,7 @@
     </mitre>
   </rule>
 
-<!-- REGLA PERSONALIZADA: Persistencia en Cron -->
+<!-- REGLA PERSONALIZADA:cron -->
   <rule id="100003" level="12">
     <if_sid>550, 554</if_sid>
     <match>/var/spool/cron</match>
