@@ -38,7 +38,7 @@ Para habilitar la recolección de telemetría de seguridad desde el sistema oper
 Para poner a prueba la eficacia del pipeline de detección, se ejecutaron ataques controlados directamente desde la terminal del agente, evaluando la respuesta del SIEM ante diferentes vectores:
 
 * **Ataques de SSH:** Simulación de intentos reiterados de inicio de sesión remoto utilizando diccionarios de usuarios no válidos, evaluando la capacidad de los decodificadores para agrupar múltiples fallos.
-* **Escalación de Privilegios (`sudo` fails):** Ejecución deliberada de comandos administrativos introduciendo contraseñas incorrectas para activar las reglas de comportamiento anómalo (escalando a alertas de nivel 10).
+* **Escalación de Privilegios (`sudo` fails):** Ejecución deliberada de comandos administrativos introduciendo contraseñas incorrectas para activar las reglas de comportamiento anómalo.
 * **Volcado de Credenciales (OS Credential Dumping):** Ejecución exitosa del comando para exponer los hashes de contraseñas del sistema, simulando la técnica de un atacante que busca escalar:
   ```bash
   sudo cat /etc/shadow
