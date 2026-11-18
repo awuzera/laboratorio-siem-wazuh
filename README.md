@@ -3,10 +3,10 @@ Implementación de SIEM local con Wazuh y Linux.
 Proyecto de laboratorio SOC (Security Operations Center) enfocado en la arquitectura, ingestión de telemetría, monitoreo de integridad de archivos (FIM) y creación de lógicas de detección personalizadas. El objetivo del laboratorio es simular amenazas reales en un entorno Linux, detectar comportamientos anómalos y realizar Threat Hunting mapeando los incidentes con el framework MITRE ATT&CK.
 
 Arquitectura y Tecnologías
-    • SIEM: Wazuh (Manager y Dashboard).
-    • Sistema Operativo / Agente: Fedora Linux.
-    • Contenedorización: Docker / Docker Compose.
-    • Protocolos y Herramientas: SSH, Journald/PAM, DQL (Data Query Language), Firewalld.
+• SIEM: Wazuh (Manager y Dashboard).
+• Sistema Operativo / Agente: Fedora Linux.
+• Contenedorización: Docker / Docker Compose.
+• Protocolos y Herramientas: SSH, Journald/PAM, DQL (Data Query Language), Firewalld.
 
 Despliegue del Servidor Wazuh
 Se estructuró mediante contenedores para garantizar aislamiento, portabilidad y correcta administración de los recursos del sistema anfitrión:
